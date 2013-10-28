@@ -28,7 +28,7 @@ public class WandsCardTests {
 	@Test
 	public void aceWandsTest() {
 		// creation
-		Card aceWands = CardFactory.getCard(RANK.ace, SUIT.wands);
+		Card aceWands = CardFactory.getMinorCard(RANK.ace, SUIT.wands);
 		// tests creation of right object
 		assertEquals(aceWands, new MinorArcana(RANK.ace, SUIT.wands));
 		// test rank
@@ -43,7 +43,7 @@ public class WandsCardTests {
 
 	@Test
 	public void twoWandsTest() {
-		Card twoWands = CardFactory.getCard(RANK.two, SUIT.wands);
+		Card twoWands = CardFactory.getMinorCard(RANK.two, SUIT.wands);
 		assertEquals(twoWands, new MinorArcana(RANK.two, SUIT.wands));
 		assertEquals(twoWands.rank(), RANK.two.ordinal());
 		assertEquals(twoWands.suit(), SUIT.wands);
@@ -53,7 +53,7 @@ public class WandsCardTests {
 
 	@Test
 	public void threeWandsTest() {
-		Card threeWands = CardFactory.getCard(RANK.three, SUIT.wands);
+		Card threeWands = CardFactory.getMinorCard(RANK.three, SUIT.wands);
 		assertEquals(threeWands, new MinorArcana(RANK.three, SUIT.wands));
 		assertEquals(threeWands.rank(), RANK.three.ordinal());
 		assertEquals(threeWands.suit(), SUIT.wands);
@@ -63,7 +63,7 @@ public class WandsCardTests {
 
 	@Test
 	public void fourWandsTest() {
-		Card fourWands = CardFactory.getCard(RANK.four, SUIT.wands);
+		Card fourWands = CardFactory.getMinorCard(RANK.four, SUIT.wands);
 		assertEquals(fourWands, new MinorArcana(RANK.four, SUIT.wands));
 		assertEquals(fourWands.rank(), RANK.four.ordinal());
 		assertEquals(fourWands.suit(), SUIT.wands);
@@ -73,7 +73,7 @@ public class WandsCardTests {
 
 	@Test
 	public void fiveWandsTest() {
-		Card fiveWands = CardFactory.getCard(RANK.five, SUIT.wands);
+		Card fiveWands = CardFactory.getMinorCard(RANK.five, SUIT.wands);
 		assertEquals(fiveWands, new MinorArcana(RANK.five, SUIT.wands));
 		assertEquals(fiveWands.rank(), RANK.five.ordinal());
 		assertEquals(fiveWands.suit(), SUIT.wands);
@@ -83,7 +83,7 @@ public class WandsCardTests {
 
 	@Test
 	public void sixWandsTest() {
-		Card sixWands = CardFactory.getCard(RANK.six, SUIT.wands);
+		Card sixWands = CardFactory.getMinorCard(RANK.six, SUIT.wands);
 		assertEquals(sixWands, new MinorArcana(RANK.six, SUIT.wands));
 		assertEquals(sixWands.rank(), RANK.six.ordinal());
 		assertEquals(sixWands.suit(), SUIT.wands);
@@ -93,7 +93,7 @@ public class WandsCardTests {
 
 	@Test
 	public void sevenWandsTest() {
-		Card sevenWands = CardFactory.getCard(RANK.seven, SUIT.wands);
+		Card sevenWands = CardFactory.getMinorCard(RANK.seven, SUIT.wands);
 		assertEquals(sevenWands, new MinorArcana(RANK.seven, SUIT.wands));
 		assertEquals(sevenWands.rank(), RANK.seven.ordinal());
 		assertEquals(sevenWands.suit(), SUIT.wands);
@@ -103,7 +103,7 @@ public class WandsCardTests {
 
 	@Test
 	public void eightWandsTest() {
-		Card eightWands = CardFactory.getCard(RANK.eight, SUIT.wands);
+		Card eightWands = CardFactory.getMinorCard(RANK.eight, SUIT.wands);
 		assertEquals(eightWands, new MinorArcana(RANK.eight, SUIT.wands));
 		assertEquals(eightWands.rank(), RANK.eight.ordinal());
 		assertEquals(eightWands.suit(), SUIT.wands);
@@ -113,7 +113,7 @@ public class WandsCardTests {
 
 	@Test
 	public void nineWandsTest() {
-		Card nineWands = CardFactory.getCard(RANK.nine, SUIT.wands);
+		Card nineWands = CardFactory.getMinorCard(RANK.nine, SUIT.wands);
 		assertEquals(nineWands, new MinorArcana(RANK.nine, SUIT.wands));
 		assertEquals(nineWands.rank(), RANK.nine.ordinal());
 		assertEquals(nineWands.suit(), SUIT.wands);
@@ -123,7 +123,7 @@ public class WandsCardTests {
 
 	@Test
 	public void tenWandsTest() {
-		Card tenWands = CardFactory.getCard(RANK.ten, SUIT.wands);
+		Card tenWands = CardFactory.getMinorCard(RANK.ten, SUIT.wands);
 		assertEquals(tenWands, new MinorArcana(RANK.ten, SUIT.wands));
 		assertEquals(tenWands.rank(), RANK.ten.ordinal());
 		assertEquals(tenWands.suit(), SUIT.wands);
@@ -133,7 +133,7 @@ public class WandsCardTests {
 
 	@Test
 	public void pageWandsTest() {
-		Card pageWands = CardFactory.getCard(RANK.page, SUIT.wands);
+		Card pageWands = CardFactory.getMinorCard(RANK.page, SUIT.wands);
 		assertEquals(pageWands, new MinorArcana(RANK.page, SUIT.wands));
 		assertEquals(pageWands.rank(), RANK.page.ordinal());
 		assertEquals(pageWands.suit(), SUIT.wands);
@@ -143,7 +143,7 @@ public class WandsCardTests {
 
 	@Test
 	public void knightWandsTest() {
-		Card knightWands = CardFactory.getCard(RANK.knight, SUIT.wands);
+		Card knightWands = CardFactory.getMinorCard(RANK.knight, SUIT.wands);
 		assertEquals(knightWands, new MinorArcana(RANK.knight, SUIT.wands));
 		assertEquals(knightWands.rank(), RANK.knight.ordinal());
 		assertEquals(knightWands.suit(), SUIT.wands);
@@ -153,7 +153,7 @@ public class WandsCardTests {
 
 	@Test
 	public void queenWandsTest() {
-		Card queenWands = CardFactory.getCard(RANK.queen, SUIT.wands);
+		Card queenWands = CardFactory.getMinorCard(RANK.queen, SUIT.wands);
 		assertEquals(queenWands, new MinorArcana(RANK.queen, SUIT.wands));
 		assertEquals(queenWands.rank(), RANK.queen.ordinal());
 		assertEquals(queenWands.suit(), SUIT.wands);
@@ -163,7 +163,7 @@ public class WandsCardTests {
 
 	@Test
 	public void kingWandsTest() {
-		Card kingWands = CardFactory.getCard(RANK.king, SUIT.wands);
+		Card kingWands = CardFactory.getMinorCard(RANK.king, SUIT.wands);
 		assertEquals(kingWands, new MinorArcana(RANK.king, SUIT.wands));
 		assertEquals(kingWands.rank(), RANK.king.ordinal());
 		assertEquals(kingWands.suit(), SUIT.wands);

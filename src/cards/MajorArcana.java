@@ -6,8 +6,24 @@ import java.util.Scanner;
 
 public class MajorArcana extends Card{
 
-	public MajorArcana(RANK rank, SUIT suit) {
-		super(rank, suit);
+	private int rank;
+
+	public MajorArcana(SUIT suit) {
+		super(suit);
+		loadMeaning();
+	}
+
+	private void loadMeaning(){
+		if (suit == null)	return;
+
+		try{
+			File open = new File(cardMeaningFolder+suit.ordinal()+"_"+suit+".txt");
+			Scanner sc = new Scanner(open);
+			meaning = sc.nextLine();
+		} catch (IOException ioe) {
+			System.out.println("file "+suit.ordinal()+"_"+suit+".txt not found: ");
+			//ioe.printStackTrace();
+		}
 	}
 
 	@Override
@@ -37,6 +53,31 @@ public class MajorArcana extends Card{
 	public SUIT suit() {
 		// the cards name
 		return suit;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + rank;
+		result = prime * result + ((suit == null) ? 0 : suit.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		MajorArcana other = (MajorArcana) obj;
+		if (rank != other.rank)
+			return false;
+		if (suit != other.suit)
+			return false;
+		return true;
 	}
 
 

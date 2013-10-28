@@ -6,8 +6,30 @@ import java.util.Scanner;
 
 public class MinorArcana extends Card{
 
+	private RANK rank;
+
 	public MinorArcana(RANK rank, SUIT suit) {
-		super(rank, suit);
+		super(suit);
+		this.rank = rank;
+		loadMeaning();
+	}
+
+	public MinorArcana(int rank, SUIT suit) {
+		super (suit);
+		this.rank = RANK.values()[rank];
+		loadMeaning();
+	}
+
+	private void loadMeaning(){
+		if (rank == null) return;
+		try{
+			File open = new File(cardMeaningFolder+suit+"_"+rank+".txt");
+			Scanner sc = new Scanner(open);
+			meaning = sc.nextLine();
+		} catch (IOException ioe) {
+			System.out.println("file "+suit+"_"+rank+".txt not found: ");
+			//ioe.printStackTrace();
+		}
 	}
 
 	@Override

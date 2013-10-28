@@ -28,7 +28,7 @@ public class SwordsCardsTests {
 	@Test
 	public void aceSwordsTest() {
 		// creation
-		Card aceSwords = CardFactory.getCard(RANK.ace, SUIT.swords);
+		Card aceSwords = CardFactory.getMinorCard(RANK.ace, SUIT.swords);
 		// tests creation of right object
 		assertEquals(aceSwords, new MinorArcana(RANK.ace, SUIT.swords));
 		// test rank
@@ -43,7 +43,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void twoSwordsTest() {
-		Card twoSwords = CardFactory.getCard(RANK.two, SUIT.swords);
+		Card twoSwords = CardFactory.getMinorCard(RANK.two, SUIT.swords);
 		assertEquals(twoSwords, new MinorArcana(RANK.two, SUIT.swords));
 		assertEquals(twoSwords.rank(), RANK.two.ordinal());
 		assertEquals(twoSwords.suit(), SUIT.swords);
@@ -53,7 +53,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void threeSwordsTest() {
-		Card threeSwords = CardFactory.getCard(RANK.three, SUIT.swords);
+		Card threeSwords = CardFactory.getMinorCard(RANK.three, SUIT.swords);
 		assertEquals(threeSwords, new MinorArcana(RANK.three, SUIT.swords));
 		assertEquals(threeSwords.rank(), RANK.three.ordinal());
 		assertEquals(threeSwords.suit(), SUIT.swords);
@@ -63,7 +63,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void fourSwordsTest() {
-		Card fourSwords = CardFactory.getCard(RANK.four, SUIT.swords);
+		Card fourSwords = CardFactory.getMinorCard(RANK.four, SUIT.swords);
 		assertEquals(fourSwords, new MinorArcana(RANK.four, SUIT.swords));
 		assertEquals(fourSwords.rank(), RANK.four.ordinal());
 		assertEquals(fourSwords.suit(), SUIT.swords);
@@ -73,7 +73,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void fiveSwordsTest() {
-		Card fiveSwords = CardFactory.getCard(RANK.five, SUIT.swords);
+		Card fiveSwords = CardFactory.getMinorCard(RANK.five, SUIT.swords);
 		assertEquals(fiveSwords, new MinorArcana(RANK.five, SUIT.swords));
 		assertEquals(fiveSwords.rank(), RANK.five.ordinal());
 		assertEquals(fiveSwords.suit(), SUIT.swords);
@@ -83,7 +83,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void sixSwordsTest() {
-		Card sixSwords = CardFactory.getCard(RANK.six, SUIT.swords);
+		Card sixSwords = CardFactory.getMinorCard(RANK.six, SUIT.swords);
 		assertEquals(sixSwords, new MinorArcana(RANK.six, SUIT.swords));
 		assertEquals(sixSwords.rank(), RANK.six.ordinal());
 		assertEquals(sixSwords.suit(), SUIT.swords);
@@ -93,7 +93,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void sevenSwordsTest() {
-		Card sevenSwords = CardFactory.getCard(RANK.seven, SUIT.swords);
+		Card sevenSwords = CardFactory.getMinorCard(RANK.seven, SUIT.swords);
 		assertEquals(sevenSwords, new MinorArcana(RANK.seven, SUIT.swords));
 		assertEquals(sevenSwords.rank(), RANK.seven.ordinal());
 		assertEquals(sevenSwords.suit(), SUIT.swords);
@@ -103,7 +103,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void eightSwordsTest() {
-		Card eightSwords = CardFactory.getCard(RANK.eight, SUIT.swords);
+		Card eightSwords = CardFactory.getMinorCard(RANK.eight, SUIT.swords);
 		assertEquals(eightSwords, new MinorArcana(RANK.eight, SUIT.swords));
 		assertEquals(eightSwords.rank(), RANK.eight.ordinal());
 		assertEquals(eightSwords.suit(), SUIT.swords);
@@ -113,7 +113,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void nineSwordsTest() {
-		Card nineSwords = CardFactory.getCard(RANK.nine, SUIT.swords);
+		Card nineSwords = CardFactory.getMinorCard(RANK.nine, SUIT.swords);
 		assertEquals(nineSwords, new MinorArcana(RANK.nine, SUIT.swords));
 		assertEquals(nineSwords.rank(), RANK.nine.ordinal());
 		assertEquals(nineSwords.suit(), SUIT.swords);
@@ -123,7 +123,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void tenSwordsTest() {
-		Card tenSwords = CardFactory.getCard(RANK.ten, SUIT.swords);
+		Card tenSwords = CardFactory.getMinorCard(RANK.ten, SUIT.swords);
 		assertEquals(tenSwords, new MinorArcana(RANK.ten, SUIT.swords));
 		assertEquals(tenSwords.rank(), RANK.ten.ordinal());
 		assertEquals(tenSwords.suit(), SUIT.swords);
@@ -133,7 +133,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void pageSwordsTest() {
-		Card pageSwords = CardFactory.getCard(RANK.page, SUIT.swords);
+		Card pageSwords = CardFactory.getMinorCard(RANK.page, SUIT.swords);
 		assertEquals(pageSwords, new MinorArcana(RANK.page, SUIT.swords));
 		assertEquals(pageSwords.rank(), RANK.page.ordinal());
 		assertEquals(pageSwords.suit(), SUIT.swords);
@@ -143,7 +143,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void knightSwordsTest() {
-		Card knightSwords = CardFactory.getCard(RANK.knight, SUIT.swords);
+		Card knightSwords = CardFactory.getMinorCard(RANK.knight, SUIT.swords);
 		assertEquals(knightSwords, new MinorArcana(RANK.knight, SUIT.swords));
 		assertEquals(knightSwords.rank(), RANK.knight.ordinal());
 		assertEquals(knightSwords.suit(), SUIT.swords);
@@ -153,7 +153,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void queenSwordsTest() {
-		Card queenSwords = CardFactory.getCard(RANK.queen, SUIT.swords);
+		Card queenSwords = CardFactory.getMinorCard(RANK.queen, SUIT.swords);
 		assertEquals(queenSwords, new MinorArcana(RANK.queen, SUIT.swords));
 		assertEquals(queenSwords.rank(), RANK.queen.ordinal());
 		assertEquals(queenSwords.suit(), SUIT.swords);
@@ -163,7 +163,7 @@ public class SwordsCardsTests {
 
 	@Test
 	public void kingSwordsTest() {
-		Card kingSwords = CardFactory.getCard(RANK.king, SUIT.swords);
+		Card kingSwords = CardFactory.getMinorCard(RANK.king, SUIT.swords);
 		assertEquals(kingSwords, new MinorArcana(RANK.king, SUIT.swords));
 		assertEquals(kingSwords.rank(), RANK.king.ordinal());
 		assertEquals(kingSwords.suit(), SUIT.swords);

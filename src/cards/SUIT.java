@@ -4,7 +4,7 @@ package cards;
 public enum SUIT {
 	the_fool,
 	the_magician,
-	the_high_prestess,
+	the_high_priestess,
 	the_empress,
 	the_emperor,
 	the_hierophant,
